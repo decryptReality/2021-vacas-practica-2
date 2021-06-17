@@ -14,6 +14,11 @@ public class Pelicula
         this.categoria = categoria;
     }
 
+    String getInformacion()
+    {
+        return "nombre: " + nombre + "anio: " + anio + "categoria: " + categoria;
+    }
+
     public int getId() {
         return id;
     }
@@ -45,4 +50,5 @@ public class Pelicula
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
+
 }

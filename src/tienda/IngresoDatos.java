@@ -34,5 +34,19 @@ public class IngresoDatos {
         String res = scanner.nextLine();
         return res;
     }
-    
+
+    public static String getNext(String mensaje)
+    {
+        System.out.println(mensaje);
+        String texto = scanner.next();
+        return texto;
+    }
+
+    public static int getNextInt(String mensaje)
+    {
+        System.out.println(mensaje);
+        int numero = scanner.nextInt();
+        return numero;
+    }
+
 }

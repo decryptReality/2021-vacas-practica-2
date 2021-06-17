@@ -4,21 +4,21 @@ import src.tienda.IngresoDatos;
 
 public class VectorClientes {
     private Cliente[] clientes = new Cliente[50];
-    private int siguienteCodigo;
+    private int id;
 
     public VectorClientes(){
-        siguienteCodigo = 1;
+        id = 1;
     }
 
     //agregar clientes
     public void agregarCliente(String nombre, int telefono){
-        if (siguienteCodigo > 50){
+        if (id > 50){
             System.out.println("Límite de clientes alcanzado");
         }
         else{
-            clientes[(siguienteCodigo-1)] = new Cliente(siguienteCodigo, nombre, telefono);
+            clientes[(id -1)] = new Cliente(id, nombre, telefono);
         }
-        siguienteCodigo++;
+        id++;
     }
 
     public void agregarCliente(){
@@ -33,7 +33,7 @@ public class VectorClientes {
 
     public void mostrarClientes(){
         System.out.println("\n\n Clientes de memorabilia");
-        for (int i = 0; i < (siguienteCodigo-1); i++) {
+        for (int i = 0; i < (id -1); i++) {
             System.out.println("-"+i+") "+clientes[i].getInformacion());
             //System.out.println("-"+i+") "+clientes[i].getId() + " nombre "+clientes[i].getNombre()+ " telefono "+clientes[i].getTelefono());
             
@@ -47,8 +47,8 @@ public class VectorClientes {
     public void ordenarPorNombre(boolean ascendente){
         boolean cambio = true;
 
-        for (int i = 1; i < (siguienteCodigo-1); i++) {
-            for (int j = 0; j < (siguienteCodigo-1-i); j++) {
+        for (int i = 1; i < (id -1); i++) {
+            for (int j = 0; j < (id -1-i); j++) {
                 //  String.compareTo(String)
                 //   [-oo , + oo]
                 if (ascendente)
