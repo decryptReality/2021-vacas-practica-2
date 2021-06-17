@@ -20,6 +20,10 @@ public class Principal {
             System.out.println("2) Mostrar clientes");
             System.out.println("3) Ordenar Clientes Ascente");
             System.out.println("4) Ordenar Clientes Descendente");
+            System.out.println("5) Ingreso de Peliculas");
+            System.out.println("6) Mostrar Peliculas");
+            System.out.println("7) Ordenar Peliculas Ascendente");
+            System.out.println("8) Ordenar Peliculas Descendente");
             System.out.println("-1) Salir");
             System.out.println("\n");
             menu = IngresoDatos.getEntero("Ingrese la opción ", true);

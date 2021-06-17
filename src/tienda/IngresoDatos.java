@@ -1,6 +1,6 @@
 package src.tienda;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class IngresoDatos {
     static Scanner scanner = new Scanner(System.in);

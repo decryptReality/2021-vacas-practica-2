@@ -1,6 +1,6 @@
 package src.clientes;
 
-import src.tienda.*;
+import src.tienda.IngresoDatos;
 
 public class VectorClientes {
     private Cliente[] clientes = new Cliente[50];
