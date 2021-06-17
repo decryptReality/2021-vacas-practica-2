@@ -67,11 +67,13 @@ public class Principal {
             if (menu == 7)
             {
                 System.out.println("Ordenar peliculas Ascendente");
-                tablaPeliculas.ordenarPorNombre(true);
+                tablaPeliculas.ordenar(true);
+                //tablaPeliculas.ordenarPorNombre(true);
             }
             if (menu == 8)
             {
                 System.out.println("Ordenar peliculas Descendente");
+                tablaPeliculas.ordenar(false);
                 tablaPeliculas.ordenarPorNombre(false);
             }
         }

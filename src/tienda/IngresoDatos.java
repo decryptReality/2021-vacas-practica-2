@@ -48,5 +48,4 @@ public class IngresoDatos {
         int numero = scanner.nextInt();
         return numero;
     }
-
 }

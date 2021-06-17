@@ -36,7 +36,6 @@ public class VectorClientes {
         for (int i = 0; i < (id -1); i++) {
             System.out.println("-"+i+") "+clientes[i].getInformacion());
             //System.out.println("-"+i+") "+clientes[i].getId() + " nombre "+clientes[i].getNombre()+ " telefono "+clientes[i].getTelefono());
-            
         }
 
         System.out.println("\n\n");

@@ -33,11 +33,50 @@ public class VectorPeliculas
     public void mostrarPeliculas() {
         System.out.println("Peliculas de memorabilia");
         int i = 0;
-        while (i < id) {
+        while (i < id - 1 & 2 <= id) // id = 2 con un unico elemento agregado
+        {
             System.out.println(peliculas[i].getInformacion());
             i = i + 1;
         }
+        System.out.println();
     }
+    public void mostrarPeliculas(Pelicula[] peliculas1) {
+        System.out.println("Peliculas de memorabilia");
+        int i = 0;
+        while (i < id - 1 & 2 <= id) // id = 2 con un unico elemento agregado
+        {
+            System.out.println(peliculas1[i].getInformacion());
+            i = i + 1;
+        }
+        System.out.println();
+    }
+
+
+    public void ordenar(boolean ascendente)
+    {
+        System.out.println("nombre de peliculas en orden ascendente");
+        Pelicula[] nombresOrdenados = peliculas;
+        boolean cambio = true;
+        for(int i = 0; i < id - 2; i++)
+        {
+            for (int j = i + 1; j < id - 1; j++)
+            {
+                if (ascendente)
+                    cambio = nombresOrdenados[i].getNombre().compareTo(nombresOrdenados[j].getNombre()) > 0;
+                else
+                    cambio = nombresOrdenados[i].getNombre().compareTo(nombresOrdenados[j].getNombre()) < 0;
+                if(cambio)
+                {
+                    Pelicula temporal = nombresOrdenados[i];
+                    nombresOrdenados[i] = nombresOrdenados[j];
+                    nombresOrdenados[j] = temporal;
+                }
+            }
+        }
+
+        mostrarPeliculas(nombresOrdenados);
+    }
+
 
     public void ordenarPorNombre(boolean ascendente) {
         boolean cambio = true;
