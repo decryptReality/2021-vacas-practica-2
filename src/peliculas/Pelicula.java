@@ -16,7 +16,7 @@ public class Pelicula
 
     String getInformacion()
     {
-        return "nombre: " + nombre + " anio: " + anio + " categoria: " + categoria + " id: " + id;
+        return nombre + ", " + anio + ", " + categoria + ", " + id;
     }
 
     public int getId() {
